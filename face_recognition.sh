@@ -10,6 +10,7 @@ import face_recognition
 import cv2
 import numpy as np
 import sys
+import os
 
 # Get a reference to webcam #0 (the default one)
 video_capture = cv2.VideoCapture(0)
@@ -27,7 +28,7 @@ face_locations = []
 face_encodings = []
 face_names = []
 process_this_frame = True
-
+if_name = '0'
 while True:
     # Grab a single frame of video
     ret, frame = video_capture.read()
@@ -60,7 +61,9 @@ while True:
             best_match_index = np.argmin(face_distances)
             if matches[best_match_index]:
                 name = known_face_names[best_match_index]
-
+                if name == 'Abra AURORA' and if_name == '0':
+                    os.system('mplayer voice/voicebooking-speech.wav')
+                    if_name = '1'
             face_names.append(name)
 
     process_this_frame = not process_this_frame
