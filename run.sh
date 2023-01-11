@@ -8,7 +8,7 @@ echo -e "Select module:\n[1] Run script\n[2] Add user\n[3] List users\n[4] To do
 
         case $choose in
             '1' )
-                bash face_recognition.sh
+                python run.face_recognition.py
                 ;;
             '2' )
                 read -e -p "$(echo -ne "Type the new user name: ")" new_user_name
