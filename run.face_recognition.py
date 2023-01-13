@@ -49,6 +49,10 @@ while True:
             best_match_index = np.argmin(face_distances)
             if matches[best_match_index]:
                 name = known_face_names[best_match_index]
+                with open("user/detected_users.txt", "r+") as file:
+                    data = file.read()
+                    if name not in data:
+                        file.write(name + "\n")
             else:
                 name = "Unknown"
 
@@ -78,6 +82,13 @@ while True:
 
     # Hit 'q' on the keyboard to quit!
     if cv2.waitKey(1) & 0xFF == ord('q'):
+        break
+
+    elif os.path.exists("face_rec.stop"):
+        os.system("rm face_rec.stop")
+        os.system("rm face_rec.run")
+        #os.system("echo '' > user/detected_users.txt") 
+        #açıklama için readme ek 1'e bakın
         break
 
 # Release handle to the webcam
