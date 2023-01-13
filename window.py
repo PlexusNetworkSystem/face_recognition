@@ -133,6 +133,7 @@ class Ui_Dialog(object):
 
     def addUser(self):
         print("Pressed add_user button")
+        os.system("zenity --info --text 'this feature is still developing' --ellipsize")
 
 
     def listUser(self):
