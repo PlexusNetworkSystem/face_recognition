@@ -1,2 +1,2 @@
 ek 1:
-bu özelliğin kapalı kalmasının sebebi fotoğraftan testpit edilen kullancılar tam olarak tanımayacağından anlık olarak görüntü işleme kullanıldığı için dosya script anda testpit edilen kullancıları her seferinde silmemesi içindir, istenirse özellik açılabilir. Bu durumda her stop recognition tuşuna basıldığında testpit edilen kullancıların listesi silinecektir.
+bu özelliğin kapalı kalmasının sebebi fotoğraftan testpit edilen kullancılar tam olarak tanımayacağından anlık olarak görüntü işleme kullanıldığı için scriptin anlık testpit edilen kullancıları her seferinde silmemesi içindir, istenirse özellik açılabilir. Bu durumda her stop recognition tuşuna basıldığında testpit edilen kullancıların listesi silinecektir.

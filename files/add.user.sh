@@ -1,6 +1,6 @@
 # read user name from file
-user_name="$(cat user/new_user_name.txt)"
-
+user_name="$(zenity --entry --text="Type the new user name")"
+[[ "$user_name" = "" ]] && echo -e "User add proc is aborted" && exit
 # add encode (known_face_encodings.py)
 add_user_encode="${user_name// /_}_face_encoding,\n    abra_face_encoding"
 user_encod=$(cat "files/known_face_encodings.py" | sed -r "s#abra_face_encoding#$add_user_encode#g");
@@ -29,5 +29,6 @@ if [[ -f $image_dir ]]; then
 :
 else
     echo -e "User add proc is aborted"
+    exit
 :
 fi

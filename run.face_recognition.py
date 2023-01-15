@@ -82,6 +82,10 @@ while True:
 
     # Hit 'q' on the keyboard to quit!
     if cv2.waitKey(1) & 0xFF == ord('q'):
+        os.system("rm face_rec.stop")
+        os.system("rm face_rec.run")
+        #os.system("echo '' > user/detected_users.txt") 
+        #açıklama için readme ek 1'e bakın
         break
 
     elif os.path.exists("face_rec.stop"):

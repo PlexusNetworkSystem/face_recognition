@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=face recognition
+Comment=Plexus™ face recognition For Linux.
+GenericName=face recognition
+Exec=python3 window.py
+Icon=
+Type=Application
+StartupNotify=true
+Categories=Utility;

@@ -133,8 +133,7 @@ class Ui_Dialog(object):
 
     def addUser(self):
         print("Pressed add_user button")
-        os.system("zenity --info --text 'this feature is still developing' --ellipsize")
-
+        os.system("bash files/add.user.sh")
 
     def listUser(self):
         print("Pressed list_user button")
@@ -151,8 +150,11 @@ class Ui_Dialog(object):
 
     def exitSystem(self):
         print("Pressed exit_system button, exiting...")
-        os.system("touch face_rec.stop")
-        sys.exit()
+        if os.path.exists("face_rec.run"):
+            os.system("touch face_rec.stop")
+            sys.exit()
+        else:
+            sys.exit()
 
 
 
