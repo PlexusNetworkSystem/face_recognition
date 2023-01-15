@@ -1,4 +1,20 @@
+[[ $USER != "root" ]] && echo "Run as ROOT!" && exit
+
+echo "Req Installation is starting..."
+echo "Installing xterm..."
+sudo apt install xterm -yq > /dev/null
+
+echo "Installing cmake..."
 sudo apt install cmake -yq
+
+echo "Installing python3-pip..."
 sudo apt install python3-pip
+
+echo "Installing python-is-python3..."
 sudo apt install python-is-python3
+
+echo "Installing face_recognation..."
 pip install face_recognition
+
+echo "Installing pyqt5..."
+pip install pyqt5
