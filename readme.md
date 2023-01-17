@@ -6,6 +6,7 @@ thank you for your support, interest and for choosing **Plexus Face recognition 
 ### Minimum 
 **Storage**   : 500 MB </br>
 **Ram**       : 2 GB </br>
+**GPU**       : 2 GB </br>
 **Processor** : 2.4 Ghz 2MB cache </br>
 **Network**   : Not Required </br>
 **AutoStart** : Not Required </br>
