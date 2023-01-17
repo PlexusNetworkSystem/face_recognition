@@ -1,3 +1,6 @@
+# :eight_spoked_asterisk: Face recognition App With GUI :eight_spoked_asterisk:
+The features of the assistant may be **limited**, **unnecessary**, **inefficient**, **inaccurate** and (or) **incomplete**. If you notify our team in advance of these problems or suggestions, the better for the application. The sooner we know, the sooner **patches**, **improvements** and **updates** will come. <br />
+
 thank you for your support, interest and for choosing **Plexus Face recognition app**. Best regards Plexus Network Team <br />
 ## :computer: System Requirements :computer:
 ### Minimum 
