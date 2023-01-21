@@ -12,7 +12,7 @@ add_user_name=$(cat "files/known_face_names.py" | sed -r "s#\"Abra AURORA\"#\"$u
 
 
 echo -e "Choose an image"
-image_dir="$(zenity --file-selection --file-filter='Image files (jpg,png,jpeg) | *.jpg *.jpeg *.png' --file-filter='All files | *')"
+image_dir="$(zenity --file-selection --file-filter='Image files (jpg,png,jpeg) | *.jpg *.jpeg *.png' --title "Choose image for new user")"
 echo -e "image dir: $image_dir"
 
 # add user (users.py)

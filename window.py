@@ -97,7 +97,7 @@ class Ui_Dialog(object):
         self.camera_freame.setMaximumSize(QtCore.QSize(269, 189))
         self.camera_freame.setMode(QtWidgets.QLCDNumber.Dec)
         self.camera_freame.setProperty("value", 0.0)
-        self.camera_freame.setProperty("intValue", 0)
+        self.camera_freame.setProperty("intValue", 2)
         self.camera_freame.setObjectName("camera_freame")
         self.camera_frame_layout.addWidget(self.camera_freame, 1, 1, 1, 1)
         self.actionimage = QtWidgets.QAction(Dialog)
@@ -146,6 +146,8 @@ class Ui_Dialog(object):
           item = QtGui.QStandardItem(user)
           model.appendRow(item)
         self.UserslistView.setModel(model)
+        os.system("sleep 3;zenity --question --text='Do you want send mail detected users list?' --ellipsize")
+
 
 
     def exitSystem(self):
